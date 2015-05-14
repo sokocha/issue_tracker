@@ -21,3 +21,11 @@ Template.InsertIssue.rendered = function () {
 
 Template.InsertIssue.destroyed = function () {
 };
+
+AutoForm.addHooks(null, function(){
+  return Router.go('issuesList');
+});
+
+
+
+
